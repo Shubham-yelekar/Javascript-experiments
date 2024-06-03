@@ -1,24 +1,29 @@
 
-    const addBtn = document.getElementById("add-btn");
-    const todoInput = document.getElementById("todo-input");
-    const todoList = document.getElementById("todo-list");
-  
-    // Function to add a new task
+// initialise the app
 
-    // Create delete button with Font Awesome icon
-       
-  
-    // Append delete button to the list item
+// Retrieve todo from local storage 
+
+let todo = JSON.parse(localStorage.getItem('todo')) || [];
+const todoInput = document.getElementById('todoInput');
+const todolist = document.getElementById('todoList');
+const todoCount =  document.getElementById('todoCount');
+const addBtn = document.getElementById('addbtn');
+const delBtn = document.getElementById('delBtn');
+
+
+// Initialize
+
+document.addEventListener('DOMContentLoaded', function(){
+    addBtn.addEventListener('click', addTask());
+    todoInput.addEventListener('keydown', function(event){
+        if(event.key === "Enter"){
+            event.preventDefault();
+            addTask();
+        }
+    })
+})
+
+function addTask() {
+    // 
     
-    // Append list item to the todo list
-  
-  
-    // Clear the input field
-   
-  
-    // Add event listener to the delete button
-    
-    // Add task when clicking the "Add Task" button
-   
-  
-    // Add task when pressing the "Enter" key
+}

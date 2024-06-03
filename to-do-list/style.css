@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 :root {
   /* NEUTRAL  */
 
@@ -55,7 +55,7 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: "Inter", sans-serif;
+    font-family: var(--ff-primary)
   }
   /*
     5. Improve media defaults
@@ -84,18 +84,18 @@
   }
 
   h1 {
-    letter-spacing: -0.1rem;
+    
     
   }
 
   h2 {
-    letter-spacing: -0.1rem;
+    
   }
 
   h3 {
-    letter-spacing: -0.04rem;
+    
   }
 
   h4 {
-    letter-spacing: -0.02rem;
+    
   }
