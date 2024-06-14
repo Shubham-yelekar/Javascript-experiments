@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Sleep Calc</title>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <p >Calculate your sleep with</p>
+        <h1>Sleep Time Calc</h1>
+        <p class="italic">It typically takes 15 minutes to fall asleep.</p>
+
+        <div class="options">
+            <button id="wakeupOption" class="options-button bold selected">
+                <span class="options-emoji  ">🌞</span>
+                I want to wakeup at
+            </button>
+            <button id="sleepOption" class="options-button bold">
+                <span class="options-emoji ">🌙</span>
+                I want to sleep at
+            </button>
+        </div>
+        <form>
+            <div>
+                <input class="input-field" type="number" id="hours" name="hours" placeholder="hr" min="1" max="12" required >
+                <span>:</span>
+                <input class="input-field" type="number" id="minutes" name="minutes" placeholder="mm" min="00" max="59" required>
+                <select class="input-field" name="am_pm" id="am_pm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <input type="button" class="calc-btn bold" value="Calculate" onclick="getTime()" ></input>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
