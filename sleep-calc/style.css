@@ -1,0 +1,191 @@
+
+:root {
+  /* NEUTRAL  */
+
+  --black : hsl(214, 24%, 11%);
+  --black-light : hsl(211, 24%, 17%);
+  --gray-dark : hsl(213, 14%, 31%);
+  --gray : hsl(208, 13%, 45%);
+  --gray-light : hsl(208, 17%, 80%);
+  --white-3 : hsl(213, 16%, 89%);
+  --white-2 : hsl(210, 22%, 96%);
+  --white-1 : hsl(210, 20%, 98%);
+
+  /* GREEN */
+  --green-dark-2 : hsl(184, 100%, 16%);
+  --green-dark-1 : hsl(172, 100%, 24%);
+  --green: hsl(160, 100%, 33%);
+  --green-light-2 : hsl(148, 72%, 63%);
+  --green-light-1 : hsl(137, 83%, 88%);
+
+  /* BLUE  */
+  --blue-dark-2 : #27097A;
+  --blue-dark-1 : #5119B7;
+  --blue : #8E33FF;
+  --blue-light-2 : #C684FF;
+  --blue-light-1 : #EFD6FF;
+
+  /* RED  */
+  --red-dark-2 : #7A4100;
+  --red-dark-1 : #B76E00;
+  --red : #FFAB00;
+  --red-light-2 : #FFD666;
+  --red-light-1 : #FFF5CC;
+
+  --ff-primary : "Inter", sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  h1 {
+    letter-spacing: -0.1rem;
+
+  }
+
+  h2 {
+    letter-spacing: -0.1rem;
+  }
+
+  h3 {
+    letter-spacing: -0.04rem;
+  }
+
+  h4 {
+    letter-spacing: -0.02rem;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .text-black {
+    color: var(--black) ;
+  }
+
+  .text-black-light {
+    color: var(--black-light) ;
+  }
+
+  .text-grey-dark{
+    color: var(--gray-dark) ;
+  }
+
+  .options {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .options-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid var(--gray-light);
+    width: 190px;
+  }
+
+  .selected {
+    border: 4px solid var(--blue-light-2);
+  }
+
+  .options-emoji {
+    font-size: 36px;
+  }
+
+
+  input[type="text"] {
+    text-align: center;
+  }
+  input[type="text"]:focus {
+    border: 1px solid #5119B7;
+  }
+
+  .input-field {
+    width: 64px;
+    height: 42px ;
+    border: 1px solid var(--gray-light);
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+.calc-btn {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: var(--blue-light-2) ;
+    border: 1px solid var(--gray-light);
+    width: 190px;
+    color: #ffffff;
+    margin-top: 8px;
+    transition: all 0.5s ease;
+}
+
+.calc-btn:hover {
+  background-color: var(--blue) ;
+}
