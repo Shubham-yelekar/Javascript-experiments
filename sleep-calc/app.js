@@ -6,8 +6,9 @@ window.addEventListener( 'DOMContentLoaded', () =>{
   const wakeupOption = document.getElementById('wakeupOption')
   const sleepOption = document.getElementById('sleepOption')
   const hoursInput = document.getElementById('hours').value
-  const minutesInput = document.getElementById('.minutes').value
+  const minutesInput = document.getElementById('minutes').value
   const ampmInput = document.getElementById('am_pm').value
+  const calcBtn = document.getElementById('calc-btn')
 
   wakeupOption.addEventListener('click', () => {
     if (wakeupOption.classList.contains('selected')){
@@ -29,9 +30,11 @@ window.addEventListener( 'DOMContentLoaded', () =>{
     }
   })
 
-  function getTime(){
-    console.log(`hoursInput`)
-  }
+  calcBtn.addEventListener('click', ()=>{
+    console.log(hoursInput)
+  })
+
+
 
 
 }
