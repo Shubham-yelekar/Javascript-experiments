@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Rock paper Scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@400,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./design-system.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h4>Rock Paper Scissors</h4>
+    <div class="wrapper">
+        <h6 class="bold text-center" style="margin-bottom: 24px;">Rock Paper Scissors</h6>
+        <div class="flex flex-col justify-center items-center computer-card">
+            <p>Computer - <span id="com-score"></span></p>
+            <div id="computer-choice" class="flex items-center justify-center" style="padding: 16px;font-size: 36px;">
+                🪨
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center user-card">
+            <p>You - <span id="user-score"></span></p>
+            <div id="user-choice" class="flex items-center justify-center" style="padding: 16px;font-size: 36px;">
+                📰
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center" style="gap: var(--scale-200);">
+            <button id="rock-option" class="secondary-btn">🪨  Rock</button>
+            <button id="paper-option" class="secondary-btn">📰  Paper</button>
+            <button id="Scissors-option" class="secondary-btn">✂️  Scissors</button>
+        </div>
+    </div>
 
-    <script src="./app.js"></script>
 </body>
 </html>

@@ -1,8 +1,5 @@
 console.log("Rock Paper Scissors?")
 
-function getHumanChoice() {ss
-  return userChoice = window.prompt("Enter your choice")
-}
 function getComputerChoice(){
 let ans
  let randomNumber = Math.floor((Math.random()*10)/3 + 1)
@@ -13,8 +10,7 @@ let ans
   }else {
     ans = 'scissors'
   }
-
- return ans
+ return console.log(ans)
 
 }
 console.log(getHumanChoice())
