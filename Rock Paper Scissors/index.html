@@ -19,22 +19,23 @@
         <h6 class="bold text-center" style="margin-bottom: 24px;">Rock Paper Scissors</h6>
         <div class="flex flex-col justify-center items-center computer-card">
             <p>Computer - <span id="com-score"></span></p>
-            <div id="computer-choice" class="flex items-center justify-center" style="padding: 16px;font-size: 36px;">
-                🪨
+            <div id="computer-choice" class="choice-box flex items-center justify-center" style="padding: 16px;font-size: 36px;">
+                
             </div>
         </div>
         <div class="flex flex-col justify-center items-center user-card">
             <p>You - <span id="user-score"></span></p>
-            <div id="user-choice" class="flex items-center justify-center" style="padding: 16px;font-size: 36px;">
-                📰
+            <div id="user-choice" class="choice-box  flex items-center justify-center" style="padding: 16px;font-size: 36px;">
+                
             </div>
         </div>
         <div class="flex flex-row justify-center items-center" style="gap: var(--scale-200);">
-            <button id="rock-option" class="secondary-btn">🪨  Rock</button>
-            <button id="paper-option" class="secondary-btn">📰  Paper</button>
-            <button id="Scissors-option" class="secondary-btn">✂️  Scissors</button>
+            <button value="rock" id="rock-option" class="secondary-btn">🤟  Rock</button>
+            <button value="paper" id="paper-option" class="secondary-btn">📰  Paper</button>
+            <button value="scissors"  id="Scissors-option" class="secondary-btn">✂️  Scissors</button>
         </div>
+        
     </div>
-
+<script src="./app.js"></script>
 </body>
 </html>

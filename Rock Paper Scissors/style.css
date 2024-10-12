@@ -8,3 +8,8 @@
   background-color: var(--color-blue-200);
   width: 200px;
 }
+
+.choice-box {
+    width: 90px;
+    height: 90px;
+}
