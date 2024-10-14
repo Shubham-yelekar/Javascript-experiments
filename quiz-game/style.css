@@ -85,7 +85,8 @@
 
   h1 {
     letter-spacing: -0.1rem;
-    
+    font-size: var(--fs-mobile-h1);
+    font-weight:var(--fw-bold) ;
   }
 
   h2 {
@@ -99,3 +100,29 @@
   h4 {
     letter-spacing: -0.02rem;
   }
+
+  button {
+    background-color: var(--white-1);
+    border: none ;
+    padding: var(--scale-200) var(--scale-400);
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .answer-btn {
+    background-color: var( --color-gray-100) ;
+    /* border: 1px solid var(--color-gray-400); */
+  }
+
+  .answer-btn:hover {
+    background-color: var( --color-gray-200) ;
+  }
+
+  .btn-disable {
+    background-color: var( --color-gray-400) ;
+  }
+
+  .btn-disable {
+    background-color: var( --color-gray-400)!important ;
+  }
+
