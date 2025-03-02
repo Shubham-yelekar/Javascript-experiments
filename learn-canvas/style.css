@@ -1,4 +1,15 @@
+body {
+
+}
+
 .wrapper {
   margin: 24px auto;
   max-width:  800px;
+
+}
+
+.canvas {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
