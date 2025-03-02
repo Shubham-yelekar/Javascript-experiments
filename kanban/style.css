@@ -83,6 +83,46 @@
     isolation: isolate;
   }
 
+* {
+  /* outline: 1px solid red; */
+}
 body {
-  background: var(--gray);
+  background-color: #1d1d1d ;
+  color: white;
+  height: 100vh;
+} 
+
+.section-boards {
+  height: 100%;
+  display: grid;
+  padding: 16px;
+  grid-template-columns: repeat(3,1fr) ;
+  gap: 24px;
+}
+
+.board {
+  border: 1px solid #575757;
+  position: relative;
+}
+
+.board-title {
+  background-color: var(--gray-dark);
+  text-align: center;
+  padding: 4px;
+}
+
+.card-box {
+  padding: 8px;
+
+}
+
+.card {
+  padding: 8px;
+  border: 1px solid var(--gray-dark);
+  cursor: pointer;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 0px;
 }

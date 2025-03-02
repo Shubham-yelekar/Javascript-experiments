@@ -82,7 +82,8 @@
   #root, #__next {
     isolation: isolate;
   }
-
+/* 
 body {
-  background: var(--gray);
-}
+  background-color: #1d1d1d ;
+  color: white;
+} */
