@@ -1,23 +1,11 @@
-class Student {
-  constructor(name, major, grades) {
-    this.name = name;
-    this.major = major;
-    this.grades = grades;
-  }
+class Players {}
 
-  addGrade(grade) {
-    this.grades.push(grade);
-  }
+const hanSolo = new Players();
 
-  gpa() {
-    return (
-      this.grades.reduce((acc, item) => acc + item, 0) / this.grades.length
-    );
-  }
-}
+console.log(hanSolo);
+console.log(hanSolo.__proto__);
+console.log(hanSolo.__proto__.__proto__);
+console.log(hanSolo.__proto__.__proto__.__proto__);
 
-const eva = new Student("eva", "Arts", [80, 60, 90]);
-console.log(eva);
-eva.addGrade(90);
-console.log(eva);
-console.log(eva.gpa());
+console.log(Object.getPrototypeOf(hanSolo.__proto__));
+console.log(Object.getOwnPropertyNames(hanSolo.__proto__));
